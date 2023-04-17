@@ -283,3 +283,5 @@ $RECYCLE.BIN/
 
 coverage
 .nyc*
+
+tmp/app.db
