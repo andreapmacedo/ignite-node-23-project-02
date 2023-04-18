@@ -1,23 +1,24 @@
 import fastify from 'fastify'
-// import { knex } from './database'
+import cookie from '@fastify/cookie'
+
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
 const app = fastify()
 
-// app.get('/hello', () => {
-//   return 'Hello World'
-// })
+app.register(cookie)
 
-// app.get('/hello', async () => {
-//   const transactions = await knex('transactions')
-//     .where('amount', 1000)
-//     .select('*')
+app.addHook('preHandler', async (request, reply) => {
+  console.log(`[${request.method}] ${request.url}`)
 
-//   return transactions
-// })
+  // const sessionId = request.cookies.sessionId
+  // if (!sessionId) {
+  //   return reply.status(401).send({
+  //     error: 'Unauthorized.',
+  //   })
+  // }
+})
 
-// app.register(transactionsRoutes)
 app.register(transactionsRoutes, {
   prefix: 'transactions',
 })
