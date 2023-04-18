@@ -10,8 +10,8 @@
 #### RN (Regras de Negócio)
 
 - [x] A transação pode ser do tipo crédito ou débito;
-- [ ] Deve ser possível identificarmos o usuário entre as transações;
-- [ ] O usuário só pode visualizar transações o qual ele criou;
+- [x] Deve ser possível identificarmos o usuário entre as transações;
+- [x] O usuário só pode visualizar transações o qual ele criou;
 
 
 #### RNF (Requisitos Não Funcionais)
@@ -29,3 +29,29 @@ npm run knex -- migrate:make create-documents
 ```bash	
  npm run knex -- migrate:latest
  ```
+
+ > Instalando o vitest
+
+```bash
+npm i vitest -D
+```
+
+> Executando o vitest
+
+```bash
+npx vitest
+```
+
+Com script no package.json
+```bash
+npm run test
+```
+```bash
+npm test
+```
+
+> Usando o supertest
+
+```bash
+npm i supertest -D
+```
