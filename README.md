@@ -29,3 +29,23 @@ npm run knex -- migrate:make create-documents
 ```bash	
  npm run knex -- migrate:latest
  ```
+
+ > Instalando o vitest
+
+```bash
+npm i vitest -D
+```
+
+> Executando o vitest
+
+```bash
+npx vitest
+```
+
+Com script no package.json
+```bash
+npm run test
+```
+```bash
+npm test
+```
