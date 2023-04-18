@@ -79,3 +79,9 @@ npm run build
 ```bash
 node build/server.js
 ```
+
+> Instalando o driver do postgres
+
+```bash
+npm i pg
+```
