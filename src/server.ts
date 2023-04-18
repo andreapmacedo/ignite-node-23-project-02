@@ -17,7 +17,10 @@ const app = fastify()
 //   return transactions
 // })
 
-app.register(transactionsRoutes)
+// app.register(transactionsRoutes)
+app.register(transactionsRoutes, {
+  prefix: 'transactions',
+})
 
 app
   .listen({
