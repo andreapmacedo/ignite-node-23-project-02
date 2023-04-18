@@ -55,3 +55,27 @@ npm test
 ```bash
 npm i supertest -D
 ```
+
+> Instalando o tsup -D (para rodar o server)
+
+```bash
+npm i tsup -D
+```
+
+> Executando o tsup
+
+```bash
+tsup src
+```
+
+Com script no package.json
+```bash
+npm run build
+
+```
+
+> Testar o server a partir dos arquivos em build
+
+```bash
+node build/server.js
+```
