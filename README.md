@@ -16,7 +16,7 @@
 
 #### RNF (Requisitos Não Funcionais)
 
-- [ ] A aplicação deve ser desenvolvida em Node.js;
+- [x] A aplicação deve ser desenvolvida em Node.js;
 
 
 
